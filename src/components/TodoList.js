@@ -21,7 +21,7 @@ export default function TodoList() {
   const visibleTodos = getVisibleTodos(todos, filter);
 
   return (
-    <div className="my-4">
+    <div className="my-4 mx-auto">
       {visibleTodos?.length === 0 ? (
         <h3 className="text-center">There are no Todos here</h3>
       ) : (

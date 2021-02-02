@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  addTodo,
-  clearTodos,
-  viewActive,
-  viewAll,
-  viewCompleted,
-} from '../store/todoReducer';
+import { addTodo, clearTodos } from '../store/todoReducer';
 import Links from './Links';
 
 export default function TodoInput() {

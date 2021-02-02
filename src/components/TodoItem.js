@@ -25,12 +25,11 @@ export default function TodoItem({ todo, i }) {
     <>
       <div
         className={`
-          row d-flex
+          row text-center
           justify-content-center 
           align-items-center m-2 
           alert ${todo.completed ? 'alert-secondary' : 'alert-primary'}
         `}
-        role="alert"
       >
         <input
           className="mr-2"
@@ -40,7 +39,10 @@ export default function TodoItem({ todo, i }) {
           defaultChecked={todo.completed}
         />
         #{i}
-        <div className="col">
+        {/* <div className="col-12 col-md">
+          
+        </div> */}
+        <div className="col-12 col-md">
           {todo.completed ? (
             <h4>
               <del>{todo.text}</del>
