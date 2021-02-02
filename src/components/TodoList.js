@@ -23,7 +23,7 @@ export default function TodoList() {
   return (
     <div className="my-4 mx-auto">
       {visibleTodos?.length === 0 ? (
-        <h3 className="text-center">There are no Todos here</h3>
+        <h3 className="text-center text-white">There are no Todo Items here</h3>
       ) : (
         visibleTodos?.map((todo, i) => (
           <TodoItem key={i} todo={todo} i={+(i + 1)} />
